@@ -27,7 +27,7 @@ const Project = ({ title }) => {
           reprehenderit harum soluta error atque quibusdam qui sequi delectus molestiae ab.
         </p>
       </div>
-      <img src={`../../src/assets/${projectTitleFormatted}.jpeg`} alt={`${projectTitleFormatted}`} />
+      <img src={`assets/${projectTitleFormatted}.jpeg`} alt={`${projectTitleFormatted}`} />
     </motion.div>
   );
 };
