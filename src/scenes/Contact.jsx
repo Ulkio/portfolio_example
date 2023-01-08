@@ -15,7 +15,6 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
     }
-    return false;
   };
 
   return (
