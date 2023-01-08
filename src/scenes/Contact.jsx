@@ -14,8 +14,8 @@ const Contact = () => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
-      return false;
     }
+    return false;
   };
 
   return (
