@@ -15,6 +15,7 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
     }
+    return false;
   };
 
   return (
@@ -65,7 +66,12 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <form action="https://formsubmit.co/094a6ab4bcd2a9c59c07a2345adda6a5" target="_blank" onSubmit={onSubmit} method="POST">
+          <form
+            action="https://formsubmit.co/094a6ab4bcd2a9c59c07a2345adda6a5"
+            target="_blank"
+            onSubmit={onSubmit}
+            method="POST"
+            value="https://ulkio.github.io/portfolio_example/">
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 rounded-sm"
               type="text"
