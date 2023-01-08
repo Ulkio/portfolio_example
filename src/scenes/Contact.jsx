@@ -68,6 +68,7 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}>
           <form action="https://formsubmit.co/094a6ab4bcd2a9c59c07a2345adda6a5" target="_blank" method="POST" value="false">
+            <input type="hidden" name="_captcha" value="false" />
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 rounded-sm"
               type="text"
