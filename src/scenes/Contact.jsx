@@ -10,13 +10,14 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e) => {
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
-    }
-    return false;
-  };
+  // const onSubmit = async (e) => {
+  //   const isValid = await trigger();
+  //   if (!isValid) {
+  //     e.preventDefault();
+  //   }
+  //   return false;
+  // };
+  //onSubmit={onSubmit}  add to form props
 
   return (
     <section id="contact" className="py-48">
@@ -66,7 +67,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <form action="https://formsubmit.co/094a6ab4bcd2a9c59c07a2345adda6a5" target="_blank" onSubmit={onSubmit} method="POST" value="false">
+          <form action="https://formsubmit.co/094a6ab4bcd2a9c59c07a2345adda6a5" target="_blank" method="POST" value="false">
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 rounded-sm"
               type="text"
